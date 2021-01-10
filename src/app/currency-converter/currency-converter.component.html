@@ -1,0 +1,50 @@
+<!-- Currency Converter Card -->
+<div class='col-md-12 col-sm-12 mt-3'>
+    <div class="card">
+        <div class="card-header">
+            Currency Converter
+        </div>
+        <div class="card-body row justify-content-center">
+            <!-- First Input -->
+            <div class="mb-5 col-md-6 input-group ">
+                <select class="custom-select" [(ngModel)]='selectedCurrency1'>
+                    <option selected>Select</option>
+                    <option *ngFor='let item of currency'>{{item}}</option>
+                </select>
+                <input [disabled]='!selectedCurrency1'  [(ngModel)]='amount1' style="width: 130px;" type="number" class="form-control" (ngModelChange)="convert(1)">
+            </div>
+
+            <!-- Second Input -->
+            <div class="mb-5 col-md-6 input-group ">
+                <select class="custom-select" [(ngModel)]='selectedCurrency2'>
+                    <option selected>Select</option>
+                    <option *ngFor='let item of currency'>{{item}}</option>
+                </select>
+                <input [disabled]='!selectedCurrency2' [(ngModel)]='amount2' style="width: 130px;" type="number" class="form-control" (ngModelChange)="convert(2)">
+            </div>
+        </div>
+
+        <!-- Footer: Table With History -->
+        <div class="card-footer bg-transparent border-primary">
+            <table class="table table-responsive" style="height: 300px !important;">
+                <caption>History</caption>
+
+                <thead class="sticky">
+                    <tr>
+                        <th scope="col">Currency</th>
+                        <th scope="col">=</th>
+                        <th scope="col">Converted</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr *ngFor = 'let item of history'>
+                        <td>{{item.currency}}</td>
+                        <td></td>
+                        <td>{{item.convertedCurrency}}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
