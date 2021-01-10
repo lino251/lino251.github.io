@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  currency: 'https://api.ratesapi.io/api/latest'
 };
