@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1610357551866,
+  "timestamp": 1610358347983,
   "index": "converter-app/index.html",
   "assetGroups": [
     {
@@ -59,7 +59,7 @@
     "converter-app/fontawesome-webfont.f691f37e57f04c152e23.woff": "28b782240b3e76db824e12c02754a9731a167527",
     "converter-app/index.html": "51cf228b1c1e204ae14c97ca1f829d12eb92579e",
     "converter-app/main.ffabf398f5ca44f00d35.js": "b3189a4000a23fc4f3f2879d618b936f659b0241",
-    "converter-app/manifest.webmanifest": "4cd2ae4d7ceb1b54e0169bd61257641bd5368668",
+    "converter-app/manifest.webmanifest": "dc650fbeaaec607bcd5eb084aae0090570bf5c8d",
     "converter-app/polyfills.2e89f9530eab053a7df4.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "converter-app/runtime.0e49e2b53282f40c8925.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "converter-app/scripts.9d2793a1bc625fc5e30d.js": "8c8470db27e034ca4852da76f66001e7aa5f9f06",
